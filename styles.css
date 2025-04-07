@@ -392,3 +392,69 @@ button:active {
     /* filter: grayscale(60%); */
     opacity: 0.6;
   }
+
+
+
+  .skills-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 60px 5%;
+    background-color: #f0f0f0;
+    flex-wrap: wrap;
+  }
+  
+  .skills-text {
+    flex: 1;
+    min-width: 300px;
+    padding-right: 40px;
+    margin-left: 0px;
+  }
+  
+  .skills-text h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+  
+  .skills-text p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    line-height: 1.6;
+  }
+  
+  .skills-bars {
+    flex: 1;
+    min-width: 300px;
+    margin-top: 30px;
+  }
+  
+  .skill {
+    margin-bottom: 25px;
+  }
+  
+  .skill-label {
+    font-size: 16px;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    letter-spacing: 1px;
+  }
+  
+  .progress-bar {
+    background-color: #a9a9a9;
+    height: 20px;
+    width: 100%;
+    border-radius: 3px;
+    overflow: hidden;
+  }
+  
+  .progress {
+    background-color: #555;
+    height: 100%;
+    text-align: right;
+    padding-right: 8px;
+    color: white;
+    font-size: 14px;
+    line-height: 20px;
+  }
