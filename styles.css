@@ -575,3 +575,74 @@ button:active {
   .highlighted {
     transform: scale(1.05);
   }
+
+
+  .contact-section {
+    background: #f2f2f2;
+    padding: 50px 0;
+  }
+  
+  .contact-header {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .contact-container {
+    display: flex;
+    flex-direction: column; /* Stack vertically */
+    /* align-items: center; */
+    margin-left: 10px;
+    gap: 30px;
+    padding: 0 20px;
+  }
+  
+  .contact-info {
+    max-width: 300px;
+    /* text-align: center; */
+    margin-left: 10px;
+  }
+  
+  .contact-info p {
+    margin: 10px 0;
+    font-size: 16px;
+  }
+  
+  .contact-form {
+    width: 100%;
+    max-width: 600px;
+  }
+  
+  .form-input,
+  .form-textarea {
+    width: 240%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    font-size: 15px;
+    border-radius: 4px;
+  }
+  
+  .form-textarea {
+    height: 100px;
+    resize: none;
+  }
+  
+  .submit-btn {
+    background: black;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 4px;
+    transition: background 0.3s ease;
+  }
+  
+  .submit-btn:hover {
+    background: #333;
+  }
+  
+  .fa {
+    margin-right: 10px;
+  }
+  
