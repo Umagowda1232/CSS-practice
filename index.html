@@ -5,9 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web1</title>
     <link rel="stylesheet" href="styles.css">
+    <!-- <link rel="scriptsheet" href="script.js"> -->
     <link rel="stylesheet" href="https://fonts.google.com/share?selection.family=Raleway:ital,wght@0,100..900;1,100..900">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<<<<<<< HEAD
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+=======
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"> -->
+
+>>>>>>> fb80548 (Added footer section)
 
 
 </head>
@@ -210,7 +217,7 @@
                   <h3>$ 10</h3>
                   <p>per month</p>
                 </div>
-                <button class="btn">Sign Up</button>
+                <div class="btn-container"><button class="btn">Sign Up</button></div>
               </div>
           
               <div class="card highlighted">
@@ -225,7 +232,7 @@
                   <h3>$ 25</h3>
                   <p>per month</p>
                 </div>
-                <button class="btn">Sign Up</button>
+                <div class="btn-container"><button class="btn">Sign Up</button></div>
               </div>
           
               <div class="card">
@@ -240,7 +247,7 @@
                   <h3>$ 50</h3>
                   <p>per month</p>
                 </div>
-                <button class="btn">Sign Up</button>
+                <div class="btn-container"><button class="btn">Sign Up</button></div>
               </div>
             </div>
           </section>
@@ -273,8 +280,56 @@
           
           
           
-    
+          <section class="contact-section">
+            <div class="contact-container">
+              <h2>CONTACT</h2>
+              <p>Let's get in touch. Send us a message:</p>
+          
+              <div class="contact-info-form">
+                <div class="contact-info">
+                  <p><i class="fas fa-map-marker-alt"></i> Chicago, US</p>
+                  <p><i class="fas fa-phone"></i> Phone: +00 151515</p>
+                  <p><i class="fas fa-envelope"></i> Email: mail@mail.com</p>
+                </div>
+          
+                <form class="contact-form">
+                  <input type="text" placeholder="Name" required>
+                  <input type="email" placeholder="Email" required>
+                  <input type="text" placeholder="Subject" required>
+                  <textarea placeholder="Message" rows="5" required></textarea>
+                  <button type="submit"><i class="fas fa-paper-plane"></i> Send Message</button>
+                </form>
+              </div>
+            </div>
+            <div class="image-city">
+              <img src="images/map.jpg" alt="Aerial view of a city intersection">
+            </div>
+          </section>
 
+          <footer class="footer">
+            <button onclick="scrollToTop()" class="top-btn">
+              <i class="fa-solid fa-arrow-up"></i> To the top
+            </button>
+          
+            <div class="social-icons">
+              <i class="fab fa-facebook-f"></i>
+              <i class="fab fa-instagram"></i>
+              <i class="fab fa-snapchat-ghost"></i>
+              <i class="fab fa-pinterest-p"></i>
+              <i class="fab fa-twitter"></i>
+              <i class="fab fa-linkedin-in"></i>
+            </div>
+          
+            <p class="credit">Powered by <a href="https://www.w3schools.com/w3css/" target="_blank">w3.css</a></p>
+          </footer>
+          
+
+          <script>
+            function scrollToTop() {
+              window.scrollTo({ top: 0, behavior: 'smooth' });
+            }
+          </script>
+          
 </body>
 </html>
 
