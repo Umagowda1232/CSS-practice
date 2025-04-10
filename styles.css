@@ -579,7 +579,6 @@ button:active {
 
   .contact-section {
     background: #f2f2f2;
-<<<<<<< HEAD
     padding: 50px 0;
   }
   
@@ -645,7 +644,6 @@ button:active {
   
   .fa {
     margin-right: 10px;
-=======
     padding: 60px 20px;
     text-align: center;
     font-family: 'Open Sans', sans-serif;
@@ -677,6 +675,7 @@ button:active {
   .contact-info {
     flex: 1;
     min-width: 250px;
+    gap: 10px;
   }
     
   .contact-info p {
@@ -791,6 +790,5 @@ button:active {
   .credit a {
     color: #fff;
     text-decoration: underline;
->>>>>>> fb80548 (Added footer section)
   }
   
