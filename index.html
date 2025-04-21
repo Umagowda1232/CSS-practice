@@ -2,53 +2,83 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Web1</title>
     <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
     <!-- <link rel="scriptsheet" href="script.js"> -->
-    <link rel="stylesheet" href="https://fonts.google.com/share?selection.family=Raleway:ital,wght@0,100..900;1,100..900">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-<<<<<<< HEAD
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-=======
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"> -->
-
->>>>>>> fb80548 (Added footer section)
-
-
+    <!-- <link rel="stylesheet" href="https://fonts.google.com/share?selection.family=Raleway:ital,wght@0,100..900;1,100..900"> -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"> -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">  -->
 </head>
+
+
 <body>
+  <div class="backdrop"></div> 
+  <header class="header">
+    <div class="logo">LOGO</div>
+    <!-- <div class="menu-toggle" onclick="toggleMenu()">☰</div> -->
+    <div>
+      <button class="toggle-button">
+        <span class="toggle-button__bar"></span>
+        <span class="toggle-button__bar"></span>
+        <span class="toggle-button__bar"></span>
+      </button>
+    </div>
+
+
+
+    <!-- <nav id="navbar" class="navbar">
+      <span class="close-btn" onclick="toggleMenu()">Close ×</span> -->
+      <!-- <ul>
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#team">TEAM</a></li>
+        <li><a href="#work">WORK</a></li>
+        <li><a href="#pricing">PRICING</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+      </ul>
+    </nav>  -->
+
+    <nav class="main-nav">
+      <ul class="main-nav__items">
+        <li class="main-nav__item"><a href="#about"><i class="bi bi-file-earmark-person"></i> About</a></li>
+        <li class="main-nav__item"><a href="#team"><i class="bi bi-people-fill"></i> Team</a></li>
+        <li class="main-nav__item"><a href="#work"><i class="bi bi-person-workspace"></i> Work</a></li>
+        <li class="main-nav__item"><a href="#pricing"><i class="bi bi-currency-dollar"></i>Pricing</a></li>
+        <li class="main-nav__item"><a href="#contact"><i class="bi bi-telephone-fill"></i> Contact</a></li>
+      </ul>
+    </nav>
+
+
+    <nav class="mobile-nav">
+      <ul class="mobile-nav__items">
+        <li class="mobile-nav__item"><a href="#about">About</a></li>
+        <li class="mobile-nav__item"><a href="#team">Team</a></li>
+        <li class="mobile-nav__item"><a href="#work">Work</a></li>
+        <li class="mobile-nav__item"><a href="#pricing">Pricing</a></li>
+        <li class="mobile-nav__item"><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+  </header>
+  
     
-        <nav class="navbar">
-        <div class="logo">LOGO</div>
-        <ul class="nav-links">
-            <li><a href="#">ABOUT</a></li>
-            <li><a href="#">TEAM</a></li>
-            <li><a href="#">WORK</a></li>
-            <li><a href="#">PRICING</a></li>
-            <li><a href="#">CONTACT</a></li>
-        </ul>
-        </nav>
-    
-        <header class="image-container">
-            <!-- <img src="mac.jpg" alt="Banner Image">
-            <span>Start something that matters</span> -->
-            <ul>
-            <li class="text1"><span>Start something that matter</span><br></li>
-            <li class="text2"><h3>Stop wasting valuable time with projects that just isn't you.</h3></li>
-            <a  href="#">Learn more and start today</a>
+        <section class="image-container">
+          <div class="hero-content">
+            <span class="text1">Start something that matters</span>
+            <h3 class="text2">Stop wasting valuable time with projects that just aren't you.</h3>
+            <a href="#">Learn more and start today</a>
             <div class="social-icons">
-                <a href="#" class="fab fa-facebook"></a>
-                <a href="#" class="fab fa-instagram"></a>
-                <a href="#" class="fab fa-twitter"></a>
-                <a href="#" class="fab fa-pinterest"></a>
-                <a href="#" class="fab fa-linkedin"></a>
+              <a href="#" class="fab fa-facebook"></a>
+              <a href="#" class="fab fa-instagram"></a>
+              <a href="#" class="fab fa-twitter"></a>
+              <a href="#" class="fab fa-pinterest"></a>
+              <a href="#" class="fab fa-linkedin"></a>
             </div>
-            </ul>
-            
-        </header>
-        <section class="features-section">
+          </div>
+        </section>
+        
+        <section id="about"  class="features-section">
             <div class="h2">ABOUT THE COMPANY</div>
             <p>Key features of our company</p>
             
@@ -85,7 +115,7 @@
                 <img src="images/phone_buildings.jpg" alt="Buildings through phone">
             </div>
         </section>
-        <section class="team-section">
+        <section id="team" class="team-section">
             <h2>THE TEAM</h2>
             <p>The ones who runs this company</p>
         
@@ -149,7 +179,7 @@
               <p>Meetings</p>
             </div>
           </section>
-          <section class="our-work-section">
+          <section id="work" class="our-work-section">
             <h2>OUR WORK</h2>
             <p>What we've done for people</p>
         
@@ -200,7 +230,7 @@
               </div>
             </div>
           </section>
-          <section class="pricing-section">
+          <section id="pricing" class="pricing-section">
             <h2>PRICING</h2>
             <p>Choose a pricing plan that fits your needs.</p>
             
@@ -251,31 +281,23 @@
               </div>
             </div>
           </section>
-          
-          
-          <section class="contact-section">
-            <div class="contact-header">
-              <h2>CONTACT</h2>
-              <p>Lets get in touch. Send us a message:</p>
-            </div>
+          <section id="contact" class="contact-section">
+            <h2>CONTACT</h2>
+            <p>Let's get in touch. Send us a message:</p>
           
             <div class="contact-container">
-              <!-- Contact Info -->
               <div class="contact-info">
-                <p><i class="fa fa-map-marker"></i> Chicago, US</p>
-                <p><i class="fa fa-phone"></i> Phone: +00 151515</p>
-                <p><i class="fa fa-envelope"></i> Email: mail@mail.com</p>
+                <p><i class="fas fa-map-marker-alt"></i> Chicago, US</p>
+                <p><i class="fas fa-phone"></i> Phone: +00 151515</p>
+                <p><i class="fas fa-envelope"></i> Email: mail@mail.com</p>
               </div>
           
-              <!-- Contact Form -->
               <form class="contact-form">
-                <input type="text" class="form-input" placeholder="Name" required>
-                <input type="email" class="form-input" placeholder="Email" required>
-                <input type="text" class="form-input" placeholder="Subject" required>
-                <textarea class="form-textarea" placeholder="Message" required></textarea>
-                <button type="submit" class="submit-btn">
-                  <i class="fa fa-paper-plane"></i> SEND MESSAGE
-                </button>
+                <input type="text" placeholder="Name" required />
+                <input type="email" placeholder="Email" required />
+                <input type="text" placeholder="Subject" required />
+                <textarea placeholder="Message" rows="3" required></textarea>
+                <button type="submit"><i class="fas fa-paper-plane"></i> SEND MESSAGE</button>
               </form>
             </div>
             <div class="image-city">
@@ -305,11 +327,23 @@
           
 
           <script>
-            function scrollToTop() {
+             const toggle = document.getElementById('menu-toggle');
+             const navLinks = document.getElementById('nav-links');
+             const closeBtn = document.querySelector('.close-btn');
+
+             toggle.addEventListener('click', () => {
+              navLinks.classList.toggle('active');
+             });
+
+             closeBtn.addEventListener('click', () => {
+              navLinks.classList.remove('active');
+             });
+
+
+             function scrollToTop() {
               window.scrollTo({ top: 0, behavior: 'smooth' });
-            }
+             }
           </script>
           
 </body>
 </html>
-
